@@ -340,7 +340,11 @@
         return;
       }
 
-      status.textContent = "ثبت‌نامت با موفقیت ذخیره شد؛ لینک درگاه هنوز از بک‌اند دریافت نمی‌شود.";
+      status.textContent = "ثبت‌نامت با موفقیت ذخیره شد ، درحال انتقال به ضفخع مورد نظر.";
+
+      setInterval(() => {
+        window.location.href = "https://evand.com/events/%D8%B1%D9%88%DB%8C%D8%AF%D8%A7%D8%AF-%D8%B3%D9%86%DA%AF-%D9%85%D9%87%D8%A7%D8%B1%D8%AA-%D8%AF%D8%B1%D8%A2%D9%85%D8%AF-847100024"
+      }, 2500);
       const buttonLabel = payButton.querySelector("span:first-child");
       if (buttonLabel) buttonLabel.textContent = "ثبت‌نام ذخیره شد";
       payButton.disabled = true;
